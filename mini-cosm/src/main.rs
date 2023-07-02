@@ -1,11 +1,11 @@
 use anyhow::Result;
 use clap::{value_parser, Arg, ArgAction, ArgMatches, Command};
 use clap_complete::{generate, Generator, Shell};
-use gears::baseapp::cli::get_run_command;
-use gears::client::{init::get_init_command, query::get_query_command, tx::get_tx_command};
+use modules::baseapp::cli::get_run_command;
+use modules::client::{init::get_init_command, query::get_query_command, tx::get_tx_command};
 use human_panic::setup_panic;
 
-use gears::{
+use modules::{
     baseapp::cli::run_run_command,
     client::{
         init::run_init_command,

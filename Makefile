@@ -8,12 +8,12 @@ test:
 	cargo test
 
 install:
-	cargo install --path ./gaia-rs
+	cargo install --path ./mini-cosm
 
 init:
-	./gaia-rs/scripts/init.sh
+	./mini-cosm/scripts/init.sh
 
 tendermint-start:
-	tendermint start --home ~/.gaia-rs
+	tendermint start --home ~/.mini-cosm
 
 .PHONY: run run-debug test install init tendermint-start

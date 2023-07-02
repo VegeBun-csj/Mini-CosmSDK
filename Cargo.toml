@@ -2,9 +2,9 @@
 members = [
     "proto-types",
     "proto-messages",
-    "gears",
+    "modules",
     "trees",
     "database",
-    "tendermint",
-    "gaia-rs",
+    "consensus-cfg",
+    "mini-cosm",
 ]

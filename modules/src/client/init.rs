@@ -70,7 +70,7 @@ pub fn run_init_command(sub_matches: &ArgMatches, app_name: &str) {
         println!("Could not create config file {}", e);
         std::process::exit(1)
     });
-    tendermint::write_tm_config(tm_config_file, moniker).unwrap_or_else(|e| {
+    consensus_cfg::write_tm_config(tm_config_file, moniker).unwrap_or_else(|e| {
         println!("Error writing config file {}", e);
         std::process::exit(1)
     });
@@ -144,7 +144,7 @@ pub fn run_init_command(sub_matches: &ArgMatches, app_name: &str) {
     });
 
     // Write key and genesis
-    tendermint::write_keys_and_genesis(
+    consensus_cfg::write_keys_and_genesis(
         node_key_file,
         priv_validator_key_file,
         genesis_file,
@@ -168,7 +168,7 @@ pub fn run_init_command(sub_matches: &ArgMatches, app_name: &str) {
         println!("Could not create private validator state file {}", e);
         std::process::exit(1)
     });
-    tendermint::write_priv_validator_state(state_file).unwrap_or_else(|e| {
+    consensus_cfg::write_priv_validator_state(state_file).unwrap_or_else(|e| {
         println!("Error writing private validator state file {}", e);
         std::process::exit(1)
     });

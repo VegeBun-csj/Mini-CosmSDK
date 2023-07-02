@@ -1,5 +1,5 @@
 [package]
-name = "gears"
+name = "modules"
 version = "0.1.0"
 edition = "2021"
 
@@ -34,7 +34,7 @@ database = { path = "../database" }
 dirs = "4.0.0"
 ibc = "0.36.0"
 serde-aux = "4.2.0"
-tendermint = { path = "../tendermint" }
+consensus-cfg = { path = "../consensus-cfg" }
 tokio = "1.27.0"
 human-panic = "1.1.4"
 anyhow = "1.0.70"

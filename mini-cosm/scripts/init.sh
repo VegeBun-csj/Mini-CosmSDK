@@ -2,5 +2,5 @@
 
 set -eux
 
-rm -rf ~/.gears
+rm -rf ~/.mini-cosm
 cargo run -- init test
