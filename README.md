@@ -1,2 +1,3 @@
 # Mini-CosmSDK
-This is minimal cosmos rust sdk for setting up cosmos ecosystem blockchain
+
+This is minimal cosmos sdk implemented by rust
